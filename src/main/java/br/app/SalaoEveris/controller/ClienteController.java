@@ -53,6 +53,17 @@ public class ClienteController extends BaseController{
 			
 		}
 	}
+	
+	@GetMapping
+	public ResponseEntity listar() {
+		
+		try {
+			ListClienteResponse response = service.listar();
+			return ResponseEntity.status(response.StatusCode).body(response);
+		}catch (Exception e) {
+			return ResponseEntity.status(errorBase.StatusCode).body(errorBase);
+		}
+	}
 
 }
 

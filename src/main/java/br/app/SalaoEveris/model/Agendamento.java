@@ -22,13 +22,13 @@ public class Agendamento {
 	
 	@ManyToOne
 	@JoinColumn(name = "ClienteId")
-	private Cliente clienteId;
+	private Cliente cliente;
 
 	@ManyToOne
 	@JoinColumn(name = "ServicoId")
-	private Cliente clienteID;
+	private Servico servico;
 	
-	private LocalDate dataHora;
+	private Date data;
 
 	public Long getId() {
 		return id;
@@ -38,30 +38,30 @@ public class Agendamento {
 		this.id = id;
 	}
 
-	public Cliente getClienteId() {
-		return clienteId;
+	public Cliente getCliente() {
+		return cliente;
 	}
 
-	public void setClienteId(Cliente clienteId) {
-		this.clienteId = clienteId;
+	public void setCliente(Cliente clienteId) {
+		this.cliente = clienteId;
 	}
 
-	public Cliente getClienteID() {
-		return clienteID;
+	public Servico getServico() {
+		return servico;
 	}
 
-	public void setClienteID(Cliente clienteID) {
-		this.clienteID = clienteID;
+	public void setServico(Servico servicoID) {
+		this.servico = servicoID;
 	}
 
-	public LocalDate getDataHora() {
-		return dataHora;
+	public Date getData() {
+		return data;
 	}
 
-	public void setDataHora(LocalDate dataHora) {
-		this.dataHora = dataHora;
+	public void setData(Date data) {
+		this.data = data;
 	}
-	
+
 	
 	
 

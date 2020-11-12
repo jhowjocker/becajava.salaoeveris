@@ -12,7 +12,7 @@ public class Servico {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nome;
-	private double valor;
+	private Double valor;
 
 	public String getNome() {
 		return nome;
@@ -22,11 +22,11 @@ public class Servico {
 		this.nome = nome;
 	}
 
-	public double getValor() {
+	public Double getValor() {
 		return valor;
 	}
 
-	public void setValor(double valor) {
+	public void setValor(Double valor) {
 		this.valor = valor;
 	}
 

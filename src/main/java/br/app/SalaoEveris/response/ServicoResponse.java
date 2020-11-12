@@ -2,6 +2,7 @@ package br.app.SalaoEveris.response;
 
 public class ServicoResponse extends BaseResponse {
 	
+	private Long id;
 	private String nome;
 	private double valor;
 	
@@ -16,6 +17,12 @@ public class ServicoResponse extends BaseResponse {
 	}
 	public void setValor(double valor) {
 		this.valor = valor;
+	}
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
 	}
 	
 	
